@@ -9,3 +9,12 @@ class Note:
     def __str__(self):
         return f"{self.date} - page {self.page}: {self.text}"
 
+
+class Book:
+    EXCELLENT = 3
+    GOOD = 2
+    BAD = 1
+    UNRATED = -1
+
+
+
