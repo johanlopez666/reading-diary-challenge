@@ -15,6 +15,15 @@ class Book:
     GOOD = 2
     BAD = 1
     UNRATED = -1
+    def __int__(self, isbn: str, title: str, author: str, pages: int):
+        self.isbn = isbn
+        self.title = title
+        self.author = author
+        self.pages = pages
+        self.rating = Book.UNRATED
+        self.notes = []
+
+
 
 
 
