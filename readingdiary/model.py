@@ -43,6 +43,20 @@ class Book:
                 result.append(note)
         return result
 
+    def page_with_most_notes(self) -> int:
+        if not self.notes:
+            return -1
+        count = {}
+        for note in self.notes:
+           if note.page not in count:
+               count[note.page] = 0
+               count[note.page] += 1
+
+        return max(count, key=count.get)
+
+
+
+
 
 
 
