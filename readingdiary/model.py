@@ -16,11 +16,11 @@ class Book:
     BAD = 1
     UNRATED = -1
     def __int__(self, isbn: str, title: str, author: str, pages: int):
-        self.isbn = isbn
-        self.title = title
-        self.author = author
-        self.pages = pages
-        self.rating = Book.UNRATED
+        self.isbn: str = isbn
+        self.title: str = title
+        self.author: str = author
+        self.pages: int = pages
+        self.rating: int = Book.UNRATED
         self.notes = []
 
     def add_note(self, text: str, page: int, date: datetime) -> bool:
