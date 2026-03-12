@@ -54,6 +54,23 @@ class Book:
 
         return max(count, key=count.get)
 
+    def __str__(self):
+        if self.rating == Book.EXCELENT:
+            rating_str = "excelent"
+        elif self.rating == Book.GOOD:
+            rating_str = "good"
+        elif self.rating == Book.BAD:
+            rating_str = "bad"
+        else:
+            rating_str = "unrated"
+
+        return f"""ISBN: {self.isbn}
+Title: {self.title}
+Author: {self.author}
+Pages: {self.pages}
+Rating: {self.rating}"""
+
+
 
 
 
